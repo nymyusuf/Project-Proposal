@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Days - Atlantic Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🌊 Atlantic Adventure</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city-nights.html">City Nights</a></li>
+                <li><a href="hiking-days.html">Hiking Days</a></li>
+                <li><a href="roadtrips.html">Roadtrips</a></li>
+                <li><a href="beach-days.html" class="active">Beach Days</a></li>
+                <li><a href="quest-log.html">Quest Log</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container beach-page">
+        <section class="page-header">
+            <h1>🏖️ Beach Days Paradise</h1>
+            <p>You can be realxed by the ocean, and you can feel the sand between your toe, and soak up the sunshine.</p>
+            <img src="images/beach.jpg" alt="Beautiful Beach Sunset" class="page-image">
+        </section>
+
+        <section class="content-section">
+            <h2>Why Beach Days Are the Best</h2>
+            <p>There is really nothing like this perfect beach day. The sounds of waves crashing, warm sand beneath you're feet. and the salty ocean breeze create the ultimate relaxation experience. Wether your swimming, surfing, and or building sandcastles, or simply lounging with a good book, the beach offers endless possibilitys for fun and tranquility.</p>
+        </section>
+
+        <section class="interactive-section">
+            <h2>🎨 Change Your Beach Vibe</h2>
+            <p>Pick your perfect beach atmosphere!</p>
+            
+            <div class="beach-controls">
+                <label for="beachTheme">Choose Your Beach Theme:</label>
+                <select id="beachTheme" class="beach-select">
+                    <option value="">-- Select a Theme --</option>
+                    <option value="tropical">🌴 Tropical Paradise</option>
+                    <option value="sunset">🌅 Golden Sunset</option>
+                    <option value="ocean">🌊 Deep Ocean Blue</option>
+                    <option value="sunrise">🌄 Early Morning Sunrise</option>
+                </select>
+                <button id="applyTheme" class="btn-primary">Apply Theme</button>
+            </div>
+
+            <div id="beachMessage" class="beach-message"></div>
+        </section>
+
+        <section class="content-section">
+            <h2>🏖️ Top Beach Activities</h2>
+            <ul class="activity-list">
+                <li>🏄‍♂️ <strong>Surfing:</strong> Ride the waves to feel the ocean's power</li>
+                <li>🤿 <strong>Snorkeling:</strong> Explore underwater worlds and marine life</li>
+                <li>🏐 <strong>Beach Volleyball:</strong> Fun team sport in the sand</li>
+                <li>🏰 <strong>Sandcastle Building:</strong> Unleash your creativity with your stuff</li>
+                <li>🚶‍♀️ <strong>Beach Walks:</strong> Peaceful strolls along the shoreline</li>
+                <li>📚 <strong>Reading:</strong> Relax with a book under an umbrella</li>
+                <li>🎣 <strong>Fishing:</strong> You can be casting a line and catching fish.</li>
+                <li>🧘‍♀️ <strong>Beach Yoga:</strong> Find zen with ocean views</li>
+                <li>🏕️ <strong>Beach Camping:</strong> You can be fell asleep to the sound of waves</li>
+                <li>📸 <strong>Photography:</strong> Capture stunning sunset moments</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🌴 Best Atlantic Beaches</h2>
+            <div class="beach-grid">
+                <div class="beach-card">
+                    <h3>Miami Beach, Florida</h3>
+                    <p>White sand, art deco architecture, and vibrant nightlife. Perfect for those who want beach relaxation with city excitement.</p>
+                </div>
+                <div class="beach-card">
+                    <h3>Outer Banks, North Carolina</h3>
+                    <p>Wild horses, historic lighthouses, and pristine shores. Ideal for nature lovers and history enthusiasts.</p>
+                </div>
+                <div class="beach-card">
+                    <h3>Cape Cod, Massachusetts</h3>
+                    <p>Classic New England charm with quaint villages and beautiful coastline. Great for families and seafood lovers.</p>
+                </div>
+                <div class="beach-card">
+                    <h3>Myrtle Beach, South Carolina</h3>
+                    <p>60 miles of beaches, boardwalk entertainment, and golf courses. Fun for all ages with plenty of activities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🧴 Beach Day Essentials</h2>
+            <table class="essentials-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Why You Need It</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunscreen (SPF 30+)</td>
+                        <td>Protect your skin from harmful UV rays</td>
+                        <td>⭐ Essential</td>
+                    </tr>
+                    <tr>
+                        <td>Beach Towel</td>
+                        <td>Dry off and create your personal beach spot</td>
+                        <td>⭐ Essential</td>
+                    </tr>
+                    <tr>
+                        <td>Water Bottle</td>
+                        <td>Stay hydrated in the sun</td>
+                        <td>⭐ Essential</td>
+                    </tr>
+                    <tr>
+                        <td>Sunglasses</td>
+                        <td>Protect eyes from sun glare</td>
+                        <td>⭐ Essential</td>
+                    </tr>
+                    <tr>
+                        <td>Beach Umbrella</td>
+                        <td>Provide shade during peak sun hours</td>
+                        <td>Recommended</td>
+                    </tr>
+                    <tr>
+                        <td>Cooler with Snacks</td>
+                        <td>Keep drinks cold and food fresh</td>
+                        <td>Recommended</td>
+                    </tr>
+                    <tr>
+                        <td>Beach Toys</td>
+                        <td>Entertainment for kids (or adults!)</td>
+                        <td>Optional</td>
+                    </tr>
+                    <tr>
+                        <td>Waterproof Phone Case</td>
+                        <td>Protect your phone from water and sand</td>
+                        <td>Optional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Atlantic Adventure | CA1040 Final Project</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

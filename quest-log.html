@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Log - Atlantic Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🌊 Atlantic Adventure</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city-nights.html">City Nights</a></li>
+                <li><a href="hiking-days.html">Hiking Days</a></li>
+                <li><a href="roadtrips.html">Roadtrips</a></li>
+                <li><a href="beach-days.html">Beach Days</a></li>
+                <li><a href="quest-log.html" class="active">Quest Log</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>📋 Adventure Quest Log</h1>
+            <p>Track all your exciting adventures and plan new ones!</p>
+        </section>
+
+        <section class="quest-section">
+            <h2>🎯 Your Adventure Checklist</h2>
+            <p>Complete these epic adventures and become an Atlantic Explorer!</p>
+
+            <div class="quest-container">
+                <h3>Active Quests</h3>
+                <ul class="quest-list" id="activeQuests">
+                    <li class="quest-item">
+                        <input type="checkbox" id="quest1">
+                        <label for="quest1">Visit 3 different cities at night</label>
+                    </li>
+                    <li class="quest-item">
+                        <input type="checkbox" id="quest2">
+                        <label for="quest2">Complete a 5-mile hiking trail</label>
+                    </li>
+                    <li class="quest-item">
+                        <input type="checkbox" id="quest3">
+                        <label for="quest3">Take a roadtrip longer than 200 miles</label>
+                    </li>
+                    <li class="quest-item">
+                        <input type="checkbox" id="quest4">
+                        <label for="quest4">Watch a sunrise from the beach</label>
+                    </li>
+                    <li class="quest-item">
+                        <input type="checkbox" id="quest5">
+                        <label for="quest5">Try a new outdoor activity</label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="add-quest-section">
+            <h2>➕ Add Your Own Adventure</h2>
+            <form id="addQuestForm" class="quest-form">
+                <div class="form-group">
+                    <label for="questName">Adventure Name:</label>
+                    <input type="text" id="questName" name="questName" required placeholder="e.g., Climb Mount Washington">
+                </div>
+
+                <div class="form-group">
+                    <label for="questType">Adventure Type:</label>
+                    <select id="questType" name="questType" required>
+                        <option value="">-- Select Type --</option>
+                        <option value="city">🌃 City Night</option>
+                        <option value="hiking">🏔️ Hiking</option>
+                        <option value="roadtrip">🚗 Roadtrip</option>
+                        <option value="beach">🏖️ Beach</option>
+                        <option value="other">🎯 Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="questNotes">Notes (optional):</label>
+                    <textarea id="questNotes" name="questNotes" rows="3" placeholder="Any additional details about this adventure..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Add to Quest Log</button>
+            </form>
+
+            <div id="questConfirmation" class="quest-confirmation"></div>
+        </section>
+
+        <section class="stats-section">
+            <h2>📊 Your Adventure Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>🏆 Level</h3>
+                    <p class="stat-number" id="adventureLevel">1</p>
+                    <p class="stat-label">Explorer Rank</p>
+                </div>
+                <div class="stat-card">
+                    <h3>✅ Completed</h3>
+                    <p class="stat-number" id="completedCount">0</p>
+                    <p class="stat-label">Adventures Done</p>
+                </div>
+                <div class="stat-card">
+                    <h3>🎯 Active</h3>
+                    <p class="stat-number" id="activeCount">5</p>
+                    <p class="stat-label">Current Quests</p>
+                </div>
+                <div class="stat-card">
+                    <h3>⭐ Points</h3>
+                    <p class="stat-number" id="pointsCount">0</p>
+                    <p class="stat-label">Explorer Points</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🏅 Achievement Badges</h2>
+            <div class="badges-grid">
+                <div class="badge">
+                    <div class="badge-icon">🌟</div>
+                    <p>First Adventure</p>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">🌃</div>
+                    <p>Night Owl</p>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">⛰️</div>
+                    <p>Mountain Climber</p>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">🚗</div>
+                    <p>Road Warrior</p>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">🏖️</div>
+                    <p>Beach Bum</p>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">👑</div>
+                    <p>Master Explorer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Atlantic Adventure | CA1040 Final Project</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

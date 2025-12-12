@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadtrips - Atlantic Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🌊 Atlantic Adventure</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city-nights.html">City Nights</a></li>
+                <li><a href="hiking-days.html">Hiking Days</a></li>
+                <li><a href="roadtrips.html" class="active">Roadtrips</a></li>
+                <li><a href="beach-days.html">Beach Days</a></li>
+                <li><a href="quest-log.html">Quest Log</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>🚗 Roadtrip Adventures</h1>
+            <p>Hit the open road and discover new destinations along the way</p>
+            <img src="images/roadtrip.jpg" alt="Road Trip Adventure" class="page-image">
+        </section>
+
+        <section class="content-section">
+            <h2>Plan Your Perfect Road Trip</h2>
+            <p>Theres something magical about a road trip - the freedom of the open road, discovering hidden gems, and creating spontanious memories along the way. Wether you're driving along scenic coastal highways or threw mountain passes, every mile brings a new adventure.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>⛽ Gas Cost Calculator</h2>
+            <p>Plan your trip budget! Calculate how much you'll spend on gas for your journey.</p>
+            
+            <form id="gasCostForm" class="trip-form">
+                <div class="form-group">
+                    <label for="distance">Trip Distance (miles):</label>
+                    <input type="number" id="distance" name="distance" min="1" required placeholder="e.g., 500">
+                </div>
+
+                <div class="form-group">
+                    <label for="mpg">Car's MPG (miles per gallon):</label>
+                    <input type="number" id="mpg" name="mpg" min="1" step="0.1" required placeholder="e.g., 28">
+
+                <div class="form-group">
+                    <label for="gasPrice">Gas Price per Gallon ($):</label>
+                    <input type="number" id="gasPrice" name="gasPrice" min="0.01" step="0.01" required placeholder="e.g., 3.50">
+                </div>
+
+                <button type="submit" class="btn-primary">Calculate Cost</button>
+            </form>
+
+            <div id="gasResult" class="calculation-result"></div>
+        </section>
+
+        <section class="content-section">
+            <h2>🗺️ Famous Road Trip Routes</h2>
+            <ol class="route-list">
+                <li>
+                    <strong>Pacific Coast Highway (California)</strong>
+                    <p>Experience stunning ocean views from San Francisco to San Diego. 650 miles of coastal beauty.</p>
+                </li>
+                <li>
+                    <strong>Route 66 (Illinois to California)</strong>
+                        <p>The iconic "Mother Road" showcasing classic Americana across 2,448 miles.</p>
+                </li>
+            <li>
+                    <strong>Blue Ridge Parkway (Virginia to North Carolina)</strong>
+                    <p>469 miles of mountain scenery, perfect for fall foliage viewing.</p>
+                </li>
+                <li>
+                    <strong>Overseas Highway (Florida Keys)</strong>
+                    <p>Drive across 42 bridges connecting islands, ending at Key West. 113 miles of tropical paradise.</p>
+                </li>
+                <li>
+                    <strong>Going-to-the-Sun Road (Montana)</strong>
+                    <p>Glacier National Park's 50-mile scenic drive through spectacular mountain terrain.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="content-section">
+            <h2>🎒 Road Trip Essentials</h2>
+            <div class="essentials-grid">
+                <div class="essential-item">
+                    <h3>📍 Navigation</h3>
+                    <p>GPS device, phone charger, physical maps as backup</p>
+                </div>
+                <div class="essential-item">
+                    <h3>🍔 Snacks & Drinks</h3>
+                    <p>Water, energy bars, fruits, and your favorite road trip treats</p>
+                <div class="essential-item">
+                    <h3>🎵 Entertainment</h3>
+                    <p>Playlists, podcasts, audiobooks for the journey</p>
+                </div>
+                <div class="essential-item">
+                    <h3>🔧 Emergency Kit</h3>
+                    <p>Jumper cables, spare tire, first aid kit, flashlight</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Atlantic Adventure | CA1040 Final Project</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
